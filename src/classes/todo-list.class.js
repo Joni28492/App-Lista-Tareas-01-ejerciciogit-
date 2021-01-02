@@ -9,16 +9,16 @@ export class TodoList{
        this.cargarLocalStorage();
     }
     //agregamos el nuevo todo
-    nuevoTodo(todo){
+    nuevoTodo( todo ){
         this.todos.push(todo);
         this.guardarLocalStorage();
     }
     eliminarTodo( id ){
-       this.todos = this.todos.filter(todo => todo.id != id);
+       this.todos = this.todos.filter( todo => todo.id != id );
        this.guardarLocalStorage();
     }
 
-    marcarCompletado(id){
+    marcarCompletado( id ){
         for (const todo of this.todos) {
             
             if (todo.id == id) {
