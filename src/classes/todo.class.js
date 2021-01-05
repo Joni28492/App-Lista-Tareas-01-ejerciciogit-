@@ -21,6 +21,7 @@ export class Todo{
         this.creado     =new Date();
     }
 
+    
     imprimirClase(){
         console.log(`${this.tarea} - ${this.id}`);
     }
